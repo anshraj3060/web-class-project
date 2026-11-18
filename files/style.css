@@ -1,0 +1,120 @@
+/* ===== CampusBite - Q1: Mobile-first base styles (no media queries) ===== */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;          /* 16px readable base size */
+  line-height: 1.5;
+  color: #222;
+  background: #fafafa;
+}
+
+/* Flexible images */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* 90% container */
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+h1 { font-size: 2rem;    margin: 0; }
+h2 { font-size: 1.5rem;  margin: 1.5rem 0 1rem; }
+h3 { font-size: 1.125rem; margin: 0.75rem 0 0.25rem; }
+
+/* Header */
+.site-header {
+  background: #c2410c;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+.tagline {
+  margin: 0.25rem 0 0;
+  font-size: 1rem;
+}
+
+/* Nav: stacked, full-width links with big tap targets */
+.nav {
+  background: #7c2d12;
+}
+
+.nav a {
+  display: block;
+  width: 100%;
+  padding: 0.875rem 1rem;   /* ~48px tall tap target */
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.nav a:hover,
+.nav a:focus {
+  background: #9a3412;
+}
+
+/* Today's Special banner */
+.banner {
+  margin-top: 1rem;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.banner-text {
+  padding: 1rem;
+}
+
+.banner-text h2 {
+  margin-top: 0;
+}
+
+/* Card grid: one column, 1rem gap */
+.card-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  padding-bottom: 1rem;
+}
+
+.card h3,
+.card .price {
+  padding: 0 1rem;
+}
+
+.price {
+  margin: 0;
+  font-weight: bold;
+  color: #9a3412;
+}
+
+/* Footer */
+.site-footer {
+  margin-top: 2rem;
+  background: #222;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+.site-footer p {
+  margin: 0.25rem 0;
+}
